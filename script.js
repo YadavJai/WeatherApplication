@@ -84,7 +84,7 @@ function showWeatherReport(weather){
     
     } else if(weatherType.textContent == 'Thunderstorm') {
     
-        document.body.style.backgroundImage = "url('images/thunderstorm.jpg')";
+        document.body.style.backgroundImage = "url('weather/thunderstorm.jpg')";
        document.querySelector('.weatherimg').src="https://cdn-icons-png.flaticon.com/512/17/17785.png";
         
     } 

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/science/weather-forecast-background.jpg');
+  background-size:cover;
+}
+
+.main{
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+backdrop-filter: blur(12px);
+border: 1px black solid;
+border-radius: 20px;
+padding: 50px;
+height: 600px;
+width: 400px;
+}
+
+.main .input{
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, .6);
+  font-size: 20px;
+  padding: 20px;
+}
+
+.main .input:focus{
+  transition: .2s all linear;
+ background-color: #bee4dd;
+ outline: none;
+}
+
+.weather{
+
+height: 63%;
+padding: 26px;
+background-color: rgba(255, 255, 255, .6);
+width: 90%;
+border-radius: 12px;
+display: flex;
+flex-direction: column;
+display: none;
+justify-content: flex-start;
+align-items: center;
+}
+
+.location{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+font-size: 23px;
+font-weight: 600;
+}
+#date{
+  margin-top: 10px;
+}
+
+.temprature{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.temprature .temp{
+
+font-size: 100px;
+
+}
+
+.weatherimg{
+
+height: 65px;
+width: 70px;
+  
+}
+
+
+.temprature .weatherstatus{
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.minmax{
+  width: 100%;
+  margin-top: -5px;
+  text-align: center;
+  font-weight:bolder;
+}
+
+@media (max-width:450px){
+
+.main{
+  padding:16px;
+  width: 80%;
+  height: 70%;
+}
+
+.main .input{
+  width: 82%;
+  margin-top: 8px;
+}
+
+.weather{
+  height: 70%;
+  width: 80%;
+}
+
+.location #date{
+font-size: 15px;
+}
+
+.temprature .temp{
+font-size: 65px;
+}
+}
